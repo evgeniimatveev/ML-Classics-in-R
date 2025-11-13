@@ -1,7 +1,32 @@
+<p align="center">
+
+  <!-- Core stack -->
+  <img src="https://img.shields.io/badge/Language-R-276DC3?logo=r&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine_Learning-Classics_in_R-blue" />
+  <img src="https://img.shields.io/badge/Source-ML_A--Z_(SuperDataScience)-orange" />
+
+  <br/>
+
+  <!-- ML areas -->
+  <img src="https://img.shields.io/badge/Preprocessing-Missing_Values_&_Scaling-9C27B0" />
+  <img src="https://img.shields.io/badge/Regression-Linear_•_SVR_•_Trees-4CAF50" />
+  <img src="https://img.shields.io/badge/Classification-Logistic_•_KNN_•_SVM-03A9F4" />
+  <img src="https://img.shields.io/badge/Clustering-K--Means_•_Hierarchical-FF9800" />
+  <img src="https://img.shields.io/badge/Association_Rules-Apriori_•_Eclat-795548" />
+
+  <br/>
+
+  <!-- Meta -->
+  <img src="https://img.shields.io/badge/Level-Beginner_to_Advanced-yellow" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey" />
+
+</p>
+
+--- 
+
 # 📊 ML Classics in R
 **Collection of classic machine learning algorithms in R**
-
-![ML](https://img.shields.io/badge/Machine_Learning-R-blue) ![Status](https://img.shields.io/badge/Status-Active-green)
 
 ## 📌 Description
 This repository provides implementations of **classic machine learning algorithms** in **R**, structured into five parts. It serves as a comprehensive resource for learning data preprocessing, regression, classification, clustering, and association rule learning.
