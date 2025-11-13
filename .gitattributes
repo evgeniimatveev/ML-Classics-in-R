@@ -1,0 +1,15 @@
+# --- GitHub Linguist configuration for "ML Classics in R" ---
+
+# Treat .R files as the main programming language
+*.R linguist-detectable=true linguist-language=R
+
+# Jupyter notebooks (if any) should also count as R
+*.ipynb linguist-detectable=true linguist-language=Jupyter\ Notebook
+
+# Data files: do not count them as programming languages
+*.csv linguist-detectable=false
+*.tsv linguist-detectable=false
+*.xls linguist-detectable=false
+*.xlsx linguist-detectable=false
+*.rds linguist-detectable=false
+*.RData linguist-detectable=false
