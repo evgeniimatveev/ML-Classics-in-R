@@ -107,6 +107,3 @@ install.packages(c("ggplot2", "dplyr", "e1071", "randomForest", "caret", "arules
 🔹 **Special thanks** to the original authors of the SuperDataScience course – **Hadelin de Ponteves** and **Kirill Eremenko** for their contributions to ML education! 🙌
 
 ---
-
-## 📜 License  
-This project is distributed under the **MIT License**. Feel free to use the code! 🚀  
