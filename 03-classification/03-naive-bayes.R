@@ -60,7 +60,7 @@ library(pROC)       # ROC-AUC calculation
 # ===============================
 
 # Load dataset
-social_data <- read.csv("Social_Network_Ads.csv")
+social_data <- read.csv("data/social-network-ads.csv")
 
 # Remove 'User.ID' if it exists
 if ("User.ID" %in% colnames(social_data)) {

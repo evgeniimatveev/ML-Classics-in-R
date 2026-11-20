@@ -19,7 +19,7 @@ library(factoextra)  # For advanced clustering visualization
 library(dplyr)  # For data manipulation
 
 # 📌 Step 2: Load the dataset
-dataset <- read.csv('mall.csv')  # Load the dataset from CSV file
+dataset <- read.csv('data/mall.csv')  # Load the dataset from CSV file
 X <- dataset[, 4:5]  # Select columns "Annual Income" and "Spending Score"
 
 # 📌 Step 3: Normalize the data (scaling for better clustering results)

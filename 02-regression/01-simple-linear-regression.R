@@ -31,7 +31,7 @@ library(RColorBrewer)
 
 # 📌 Step 2: Load the Dataset
 # Load Salary dataset containing experience and salary data
-dataset <- read.csv('Salary_Data.csv')
+dataset <- read.csv('data/salary-data.csv')
 
 # Display the first few rows of the dataset to understand its structure
 head(dataset)

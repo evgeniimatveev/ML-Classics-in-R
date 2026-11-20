@@ -56,7 +56,7 @@ library(e1071)        # Support Vector Machines (SVM)
 library(randomForest) # Random Forest model
 
 # Load dataset
-df <- read.csv("Social_Network_Ads.csv")  # Read dataset from CSV file
+df <- read.csv("data/social-network-ads.csv")  # Read dataset from CSV file
 
 # Convert target variable to factor (for classification)
 df$Purchased <- as.factor(df$Purchased)  # Convert to factor to ensure classification

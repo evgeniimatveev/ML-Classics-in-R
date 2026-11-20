@@ -23,7 +23,7 @@ library(ggplot2)  # 📊 For visualization
 # -----------------------------------
 # 📂 Step 2: Load the dataset
 # -----------------------------------
-dataset <- read.csv("Position_Salaries.csv")  # Load data from CSV file
+dataset <- read.csv("data/position-salaries.csv")  # Load data from CSV file
 dataset <- dataset[2:3]  # Select relevant columns: Level (X) and Salary (y)
 
 # -----------------------------------

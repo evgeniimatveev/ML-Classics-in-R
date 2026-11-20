@@ -32,7 +32,7 @@ library(ggplot2)  # Visualization library
 library(dplyr)    # Data manipulation
 
 # 📌 **Step 1: Loading the Dataset**
-dataset <- read.csv('Position_Salaries.csv')  # Load CSV file
+dataset <- read.csv('data/position-salaries.csv')  # Load CSV file
 dataset <- dataset[2:3]  # Selecting only 'Level' and 'Salary' columns
 
 # 📌 **Step 2: Fitting Linear Regression Model**

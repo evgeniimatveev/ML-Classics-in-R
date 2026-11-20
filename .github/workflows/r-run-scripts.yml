@@ -1,0 +1,28 @@
+name: R script smoke run (manual)
+
+# Manual only: click "Run workflow" in the Actions tab. No push / PR / schedule triggers.
+on:
+  workflow_dispatch:
+  push:
+    branches: [restructure/single-main-numbered-sections]   # TEMPORARY: to test before merge
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install packages used by the scripts
+        run: |
+          Rscript -e 'pkgs <- c("caTools","ggplot2","reshape2","dplyr","tidyverse","data.table","rpart","randomForest","gt","car","Metrics","caret","RColorBrewer","e1071","class","xgboost","pROC","ROCR","knitr","cluster","factoextra","NbClust","clusterCrit","ggforce","arules","arulesViz"); install.packages(pkgs); missing <- pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)]; if (length(missing)) stop("not installed: ", paste(missing, collapse = ", "))'
+
+      - name: Run every script (see Job Summary for the table)
+        run: Rscript .github/scripts/run-scripts.R

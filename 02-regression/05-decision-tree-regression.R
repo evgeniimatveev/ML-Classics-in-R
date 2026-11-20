@@ -27,7 +27,7 @@ library(caTools)  # ✂️ Splitting dataset into training and testing sets
 library(gt)  # 📋 Creating formatted tables
 
 # 📂 Load the dataset
-dataset <- read.csv('housing.csv')  # 📥 Load CSV file
+dataset <- read.csv('data/housing.csv')  # 📥 Load CSV file
 
 # 🔄 Convert categorical variables into numerical (One-Hot Encoding)
 dataset <- model.matrix(~ . -1, data = dataset)  # 🔀 Convert categorical features into numeric

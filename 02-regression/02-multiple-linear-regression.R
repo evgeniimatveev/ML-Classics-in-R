@@ -52,7 +52,7 @@ library(ggplot2)  # For visualization
 library(car)  # For VIF analysis
 
 # 📂 Loading the Dataset
-dataset <- read.csv('50_Startups.csv')
+dataset <- read.csv('data/50-startups.csv')
 
 # 🔄 Encoding Categorical Variable 'State' (One-Hot Encoding Alternative)
 dataset$State <- factor(dataset$State,

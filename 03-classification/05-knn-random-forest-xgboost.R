@@ -56,7 +56,7 @@ library(pROC)  # For ROC Curve analysis
 library(ROCR)  # Performance evaluation utilities
 
 # Load dataset
-data <- fread("Social_Network_Ads.csv")  # Read CSV file into a dataframe
+data <- fread("data/social-network-ads.csv")  # Read CSV file into a dataframe
 
 # Fix column names
 tidy_colnames <- make.names(colnames(data))  # Ensure column names are valid

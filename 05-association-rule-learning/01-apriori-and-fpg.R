@@ -12,7 +12,7 @@ library(dplyr)  # Data manipulation
 
 # 🔹 Step 1: Load and Preprocess Data
 cat("\n🔹 Loading dataset...\n")
-df <- read.csv("Groceries_dataset.csv", stringsAsFactors = FALSE)  # Read dataset
+df <- read.csv("data/groceries.csv", stringsAsFactors = FALSE)  # Read dataset
 
 # Convert transactions into a list format
 cat("\n🔹 Transforming transactions...\n")

@@ -16,7 +16,7 @@
 
 # 📥 Load the dataset from a CSV file into a dataframe
 # `read.csv("filename.csv")` is used to load tabular data from a CSV file.
-dataset = read.csv('Data.csv', stringsAsFactors = FALSE)
+dataset = read.csv('data/data-preprocessing.csv', stringsAsFactors = FALSE)
 
 # Ensure the dataset is correctly loaded
 # str(dataset)  # 📊 Shows the structure of the dataset

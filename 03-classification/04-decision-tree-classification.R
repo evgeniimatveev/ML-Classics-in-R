@@ -30,7 +30,7 @@ library(reshape2)    # Data reshaping for visualization
 # 📂 Load and preprocess dataset
 # ===============================
 
-social_data <- read.csv("Social_Network_Ads.csv")  # Load dataset
+social_data <- read.csv("data/social-network-ads.csv")  # Load dataset
 
 # Remove 'User.ID' column if it exists
 if ("User.ID" %in% colnames(social_data)) {

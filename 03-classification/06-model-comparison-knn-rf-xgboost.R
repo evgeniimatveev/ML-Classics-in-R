@@ -52,7 +52,7 @@ library(randomForest)  # Random Forest classification model
 library(xgboost)  # Gradient Boosting model for classification
 
 # Load dataset
-data <- fread("Social_Network_Ads.csv")  # Read CSV file into a dataframe
+data <- fread("data/social-network-ads.csv")  # Read CSV file into a dataframe
 
 # Fix column names
 tidy_colnames <- make.names(colnames(data))  # Ensure column names are valid

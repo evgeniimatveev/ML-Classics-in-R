@@ -17,7 +17,7 @@ library(ggplot2)      # For enhanced visualization
 
 # 📂 Load Dataset
 # We'll use a sample dataset similar to "Mall_Customers.csv"
-data <- read.csv("Mall.csv")
+data <- read.csv("data/mall.csv")
 
 # 📊 Select relevant features (Annual Income & Spending Score)
 data_selected <- data[, c(4,5)]  # Selecting numerical columns

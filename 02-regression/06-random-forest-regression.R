@@ -33,7 +33,7 @@ library(rpart)
 library(randomForest)
 
 # Load dataset
-dataset = read.csv('Position_Salaries.csv')
+dataset = read.csv('data/position-salaries.csv')
 dataset = dataset[2:3]  # Keep only Level and Salary columns
 
 # Set seed for reproducibility
