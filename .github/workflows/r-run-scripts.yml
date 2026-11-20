@@ -21,7 +21,7 @@ jobs:
           use-public-rspm: true
 
       - name: System libraries needed to build some R packages (text shaping, fonts, images)
-        run: sudo apt-get update && sudo apt-get install -y libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff-dev libjpeg-dev libxml2-dev libcurl4-openssl-dev
+        run: sudo apt-get update && sudo apt-get install -y libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff-dev libjpeg-dev libxml2-dev libcurl4-openssl-dev libglpk-dev libgmp-dev
 
       - name: Install packages used by the scripts
         run: |
