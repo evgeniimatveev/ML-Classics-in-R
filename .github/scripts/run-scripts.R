@@ -6,6 +6,7 @@
 #   * `preludes` can name a script that must be sourced first (none needed here)
 #   * each script runs from the repo root so relative paths like data/... work
 #   * plots go to a null device; a per-script timeout stops runaway loops
+#   * View() opens RStudio's data viewer, which does not exist in a headless run, so it is stubbed
 
 timeout_sec <- 600
 
@@ -42,7 +43,7 @@ for (s in scripts) {
   }
   files <- c(if (!is.null(preludes[[s]])) preludes[[s]], s)
   expr <- sprintf(
-    "options(warn = 1); pdf(NULL); for (p in c(%s)) source(p, echo = FALSE, encoding = 'UTF-8')",
+    "options(warn = 1); pdf(NULL); View <- function(...) invisible(NULL); for (p in c(%s)) source(p, echo = FALSE, encoding = 'UTF-8')",
     paste0("'", files, "'", collapse = ", ")
   )
   t0 <- Sys.time()

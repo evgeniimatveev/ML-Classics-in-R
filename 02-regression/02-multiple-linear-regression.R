@@ -118,13 +118,12 @@ ggplot(residuals_df, aes(x = Fitted, y = Residuals)) +
   ggtitle("Residual Analysis: Checking Model Assumptions") +
   xlab("Fitted Values") + ylab("Residuals")
 
+# 🚀 Performing Backward Elimination (Feature Selection)
+stepwise_model_final <- step(lm(Profit ~ ., data = training_set), direction = "backward")
+
 # 📏 Checking Multicollinearity with VIF (After Feature Selection)
 vif_values_final <- vif(stepwise_model_final)
 print(vif_values_final)
-
-
-# 🚀 Performing Backward Elimination (Feature Selection)
-stepwise_model_final <- step(lm(Profit ~ ., data = training_set), direction = "backward")
 
 # 🔄 Ensure test_set contains only the necessary columns after Backward Elimination
 selected_vars <- names(coef(stepwise_model_final))

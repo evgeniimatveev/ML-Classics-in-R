@@ -97,7 +97,7 @@ set.seed(42)
 xgb_train <- xgb.DMatrix(data = as.matrix(trainData_xgb), label = as.numeric(trainData$Purchased) - 1)  # Convert training data to matrix
 xgb_test <- xgb.DMatrix(data = as.matrix(testData_xgb))  # Convert test data to matrix
 
-xgb_model <- xgboost(data = xgb_train, nrounds = 100, objective = "binary:logistic", eval_metric = "auc")  # Train XGBoost model
+xgb_model <- xgb.train(params = list(objective = "binary:logistic", eval_metric = "auc"), data = xgb_train, nrounds = 100)  # Train XGBoost model
 xgb_preds <- predict(xgb_model, xgb_test) > 0.5  # Convert probabilities to binary values
 xgb_preds_factor <- factor(ifelse(xgb_preds, "1", "0"), levels = levels(testData$Purchased))  # Ensure correct factor levels
 

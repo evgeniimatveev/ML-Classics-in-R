@@ -54,6 +54,7 @@
 library(caret)        # Machine learning utilities
 library(e1071)        # Support Vector Machines (SVM)
 library(randomForest) # Random Forest model
+library(DT)           # Interactive tables (datatable)
 
 # Load dataset
 df <- read.csv("data/social-network-ads.csv")  # Read dataset from CSV file
