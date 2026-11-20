@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="364" viewBox="0 0 960 364" role="img" aria-label="Who buys after the ad">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1b3a"/><stop offset="0.65" stop-color="#14306b"/><stop offset="1" stop-color="#1d4a8f"/></linearGradient><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#75AADB"/><stop offset="1" stop-color="#9fd0ff"/></linearGradient><linearGradient id="hot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff9f43"/><stop offset="1" stop-color="#ffc078"/></linearGradient></defs>
+<rect width="960" height="364" rx="16" fill="url(#bg)"/>
+<text x="32" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Who buys after the ad</text>
+<text x="32" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#cfe3ff">Social_Network_Ads: share of users who purchased, by age group</text>
+<text x="176" y="142" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">under 30</text>
+<rect x="190" y="124" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="124" width="16.8" height="26" rx="6" fill="url(#bar)"/>
+<text x="216.8" y="143" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">4%<tspan font-weight="400" fill="#cfe3ff" dx="8">4 of 100 users bought</tspan></text>
+<text x="176" y="188" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">30–39</text>
+<rect x="190" y="170" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="170" width="97.3" height="26" rx="6" fill="url(#bar)"/>
+<text x="297.3" y="189" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">23.2%<tspan font-weight="400" fill="#cfe3ff" dx="8">32 of 138 users bought</tspan></text>
+<text x="176" y="234" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">40–49</text>
+<rect x="190" y="216" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="216" width="226.9" height="26" rx="6" fill="url(#bar)"/>
+<text x="426.9" y="235" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">54.1%<tspan font-weight="400" fill="#cfe3ff" dx="8">59 of 109 users bought</tspan></text>
+<text x="176" y="280" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">50 and over</text>
+<rect x="190" y="262" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="262" width="380.0" height="26" rx="6" fill="url(#hot)"/>
+<text x="580.0" y="281" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">90.6%<tspan font-weight="400" fill="#cfe3ff" dx="8">48 of 53 users bought</tspan></text>
+<text x="32" y="344" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#9fb8dc">Computed from data/social-network-ads.csv</text>
+</svg>

@@ -1,0 +1,12 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rapp.history
+Rplots.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

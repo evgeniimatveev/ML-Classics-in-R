@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-label="Salary by position level">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1b3a"/><stop offset="0.65" stop-color="#14306b"/><stop offset="1" stop-color="#1d4a8f"/></linearGradient><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#75AADB"/><stop offset="1" stop-color="#9fd0ff"/></linearGradient><linearGradient id="hot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff9f43"/><stop offset="1" stop-color="#ffc078"/></linearGradient></defs>
+<rect width="960" height="640" rx="16" fill="url(#bg)"/>
+<text x="32" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Salary by position level</text>
+<text x="32" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#cfe3ff">Position_Salaries: why a straight line fails and polynomial regression helps</text>
+<text x="176" y="142" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Business Analyst</text>
+<rect x="190" y="124" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="124" width="17.1" height="26" rx="6" fill="url(#bar)"/>
+<text x="217.1" y="143" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">45k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 1</tspan></text>
+<text x="176" y="188" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Junior Consultant</text>
+<rect x="190" y="170" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="170" width="19.0" height="26" rx="6" fill="url(#bar)"/>
+<text x="219.0" y="189" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">50k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 2</tspan></text>
+<text x="176" y="234" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Senior Consultant</text>
+<rect x="190" y="216" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="216" width="22.8" height="26" rx="6" fill="url(#bar)"/>
+<text x="222.8" y="235" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">60k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 3</tspan></text>
+<text x="176" y="280" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Manager</text>
+<rect x="190" y="262" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="262" width="30.4" height="26" rx="6" fill="url(#bar)"/>
+<text x="230.4" y="281" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">80k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 4</tspan></text>
+<text x="176" y="326" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Country Manager</text>
+<rect x="190" y="308" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="308" width="41.8" height="26" rx="6" fill="url(#bar)"/>
+<text x="241.8" y="327" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">110k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 5</tspan></text>
+<text x="176" y="372" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Region Manager</text>
+<rect x="190" y="354" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="354" width="57.0" height="26" rx="6" fill="url(#bar)"/>
+<text x="257.0" y="373" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">150k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 6</tspan></text>
+<text x="176" y="418" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Partner</text>
+<rect x="190" y="400" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="400" width="76.0" height="26" rx="6" fill="url(#bar)"/>
+<text x="276.0" y="419" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">200k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 7</tspan></text>
+<text x="176" y="464" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">Senior Partner</text>
+<rect x="190" y="446" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="446" width="114.0" height="26" rx="6" fill="url(#bar)"/>
+<text x="314.0" y="465" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">300k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 8</tspan></text>
+<text x="176" y="510" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">C-level</text>
+<rect x="190" y="492" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="492" width="190.0" height="26" rx="6" fill="url(#bar)"/>
+<text x="390.0" y="511" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">500k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 9</tspan></text>
+<text x="176" y="556" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="17" fill="#eaf3ff">CEO</text>
+<rect x="190" y="538" width="380" height="26" rx="6" fill="#ffffff" fill-opacity="0.07"/>
+<rect x="190" y="538" width="380.0" height="26" rx="6" fill="url(#hot)"/>
+<text x="580.0" y="557" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">1000k$<tspan font-weight="400" fill="#cfe3ff" dx="8">level 10</tspan></text>
+<text x="32" y="620" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#9fb8dc">Computed from data/position-salaries.csv</text>
+</svg>
