@@ -20,9 +20,12 @@ jobs:
         with:
           use-public-rspm: true
 
+      - name: System libraries needed to build some R packages (text shaping, fonts, images)
+        run: sudo apt-get update && sudo apt-get install -y libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff-dev libjpeg-dev libxml2-dev libcurl4-openssl-dev
+
       - name: Install packages used by the scripts
         run: |
-          Rscript -e 'pkgs <- c("caTools","ggplot2","reshape2","dplyr","tidyverse","data.table","rpart","randomForest","gt","car","Metrics","caret","RColorBrewer","e1071","class","xgboost","pROC","ROCR","knitr","cluster","factoextra","NbClust","clusterCrit","ggforce","arules","arulesViz"); install.packages(pkgs); missing <- pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)]; if (length(missing)) stop("not installed: ", paste(missing, collapse = ", "))'
+          Rscript -e 'pkgs <- c("caTools","ggplot2","reshape2","dplyr","tidyverse","data.table","rpart","randomForest","gt","car","Metrics","caret","RColorBrewer","e1071","class","xgboost","pROC","ROCR","knitr","cluster","factoextra","NbClust","clusterCrit","ggforce","arules","arulesViz"); install.packages(pkgs, Ncpus = 4); missing <- pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)]; if (length(missing)) stop("not installed: ", paste(missing, collapse = ", "))'
 
       - name: Run every script (see Job Summary for the table)
         run: Rscript .github/scripts/run-scripts.R
