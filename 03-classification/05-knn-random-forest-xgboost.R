@@ -121,6 +121,14 @@ cat("\nKNN Precision:", knn_metrics["Precision"], "| Recall:", knn_metrics["Reca
 cat("\nRandom Forest Precision:", rf_metrics["Precision"], "| Recall:", rf_metrics["Recall"], "| F1-score:", rf_metrics["F1"])
 cat("\nXGBoost Precision:", xgb_metrics["Precision"], "| Recall:", xgb_metrics["Recall"], "| F1-score:", xgb_metrics["F1"], "\n")
 
+# (restored: knn_roc, rf_roc and xgb_roc are used below but were never created)
+knn_probs <- predict(knn_model, testData, type = "prob")[, "1"]  # Predicted probability of class 1
+rf_probs <- predict(rf_model, testData, type = "prob")[, "1"]
+xgb_probs <- predict(xgb_model, xgb_test)
+knn_roc <- roc(testData$Purchased, knn_probs)  # ROC curve (pROC)
+rf_roc <- roc(testData$Purchased, rf_probs)
+xgb_roc <- roc(testData$Purchased, xgb_probs)
+
 # Create DataFrame for visualization
 roc_data <- data.frame(
   FPR = c(knn_roc$specificities, rf_roc$specificities, xgb_roc$specificities),  # False Positive Rate
